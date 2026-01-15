@@ -1,0 +1,53 @@
+/* Звёздочка это стили для всех объектов: h1-h6, p, img, ul, li, div и т.д */
+* {
+    /* отступы */
+    margin: 0;
+    /*  */
+    padding: 0;
+    /*  */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(34, 34, 34);
+    color: white;
+
+}
+
+h1 {
+    /* Размер шрифта */
+    font-size: large;
+    /* шрифт */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    /* Выравнивание текста по центру */
+    text-align: center; 
+    
+    /* Весь текст заглавными буквами */
+    text-transform: uppercase;
+    /* Цвет текста */
+    color: orange;
+    /* Цвет заднего фона */
+    background-color: gainsboro;
+
+    /* Расстояние между буквами */
+    letter-spacing: 10px;
+    /* Расстояние между словами */
+    word-spacing: 10px;
+
+    /* Отступы */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    /* Отступы по часовой стрелке */
+    margin: 20px 20px 20px 20px;
+    /* Отступы сверху-снизу; справа-слева */
+    margin: 20px 20px;
+    /* Отступы со всех сторон */
+    margin: 20px;
+}
+
+a {
+    color: white;
+}

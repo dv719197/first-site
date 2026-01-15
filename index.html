@@ -1,0 +1,54 @@
+<!-- CTRL + / (наклонная палочка называется слэш) это сочетание клавиш делает комментарий, комментарий вижу только я, компьютер их пропускает -->
+<!-- Чтобы создать начальный код надо написать ! знак восклицания и нажать Enter -->
+<!-- HTML это язык программирования на котором создаются страницы сайта -->
+<!-- Чтобы запустить сайт можно просто открыть его в папке где он сохранен или через расширение Live Server, в коде HTML нажать ПКМ - Open with live Server -->
+<!-- Перенос строк включается в View → Word Wrap и поставить галочку -->
+
+<!-- Начало документа -->
+<!DOCTYPE html>
+<!-- Язык страницы -->
+<html lang="ru">
+<!-- Системные настройки страницы -->
+<head>
+    <!-- Кодировка текста что бы китайские, русские, английские символы нормально отображались -->
+    <meta charset="UTF-8">
+
+    <!-- Даёт возможность сделать сайт адаптивным под разные размеры экранов -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title это название вкладки в браузере -->
+    <title>Островочек веселья – главная</title>
+
+    <!-- Стили пишем в отдельном файле чтобы у нас не было очень много кода -->
+    <style></style>
+
+    <!-- Подключаем CSS в HTML -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<!-- body это главный тег ВНУТРИ которого пишется весь код страницы, это как лист бумаги на котором можно рисовать -->
+<body>
+    <!-- Меню -->
+    <a href="/">Главная</a>
+    <a href="/list-page.html">Списки</a>
+
+    <!-- h1 - h6 это заголовки -->
+    <h1>Островочек веселья</h1>
+    <!-- p – это обычный текст параграф -->
+    <p>Тут надо написать описание что будет в этой игре: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, dolores ipsa ratione aspernatur a distinctio veritatis excepturi fugit, in harum ducimus eveniet sit nostrum nobis, laborum aperiam consectetur necessitatibus autem?</p>
+    <!-- img это картинка, у неё есть доп. свойства src, width, alt -->
+    <img src="/images/hero.png" alt="Вид сверху на главую площадь в игре" width="700">
+    <!-- img это тег который добавляет картинку -->
+    <!-- src это доп. свойство (атрибуты) тега которое указывает путь до картинки -->
+    <!-- / означает обращение к главной папке на сайте -->
+    <!-- alt это доп. свойство (атрибуты) текст который появляется если картинка сломалась -->
+    <!-- width это доп. свойство (атрибуты) ширина картинки -->
+
+
+    <h2>Что вам предстоит пройти</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim atque id, deleniti inventore sunt quaerat quas dignissimos cupiditate minima quam iusto odit consectetur, eaque ullam esse, nisi sint rerum.</p>
+    <img src="/" alt="Картинка 1">
+    <img src="/" alt="Картинка 2">
+    <img src="/" alt="Картинка 3">
+    <img src="/" alt="Картинка 4">
+</body>
+</html>
