@@ -18,10 +18,10 @@ h1 {
     /* Размер шрифта */
     font-size: large;
     /* шрифт */
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     /* Выравнивание текста по центру */
-    text-align: center; 
-    
+    text-align: center;
+
     /* Весь текст заглавными буквами */
     text-transform: uppercase;
     /* Цвет текста */
@@ -34,6 +34,9 @@ h1 {
     /* Расстояние между словами */
     word-spacing: 10px;
 
+}
+
+hr {
     /* Отступы */
     margin-top: 20px;
     margin-bottom: 20px;
@@ -46,8 +49,18 @@ h1 {
     margin: 20px 20px;
     /* Отступы со всех сторон */
     margin: 20px;
+
 }
 
 a {
     color: white;
 }
+
+.btn {
+    padding: 15px 30px; /* Внутренние отступы */
+    color: white;
+  /*  background-color: orange;  Цвет фона кнопки */
+    background: linear-gradient(135deg, rgb(255, 195, 0), rgb(255, 139, 0));
+    box-shadow: 17px 15px 3px 0px rgba(0, 0, 0, 0.3);
+}
+
