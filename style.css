@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+/* font-family: "Nabla", system-ui;*/
+
 /* Звёздочка это стили для всех объектов: h1-h6, p, img, ul, li, div и т.д */
 * {
     /* отступы */
@@ -18,7 +21,8 @@ h1 {
     /* Размер шрифта */
     font-size: large;
     /* шрифт */
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-family: "Nabla", system-ui;
     /* Выравнивание текста по центру */
     text-align: center;
 
@@ -86,7 +90,9 @@ p {
     box-shadow: 12px 10px 5px -5px rgba(0, 0, 0, 0.72);
 }
 
-
+.lor {
+    font-family: "Nabla", system-ui;
+}
 
 
 
