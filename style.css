@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
 /* font-family: "Nabla", system-ui;*/
 
+@import url('https://fonts.googleapis.com/css2?family=Mogra&display=swap');
+/*  font-family: "Mogra", system-ui; */
+
 /* Звёздочка это стили для всех объектов: h1-h6, p, img, ul, li, div и т.д */
 * {
     /* отступы */
@@ -19,7 +22,7 @@ body {
 
 h1 {
     /* Размер шрифта */
-    font-size: large;
+    font-size: 45px;
     /* шрифт */
     /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     font-family: "Nabla", system-ui;
@@ -90,8 +93,12 @@ p {
     box-shadow: 12px 10px 5px -5px rgba(0, 0, 0, 0.72);
 }
 
-.lor {
-    font-family: "Nabla", system-ui;
+.lor2 {
+    font-family: "Mogra", system-ui;
+}
+
+.lor1 {
+    font-family: "Mogra", system-ui;
 }
 
 
