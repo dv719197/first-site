@@ -20,7 +20,7 @@ body {
     font-size: 16px;
 }
 
-h1 {
+ h1 {
     /* rem это умножение шрифта от числа в body 16*3 */
     font-size: 3rem;
     /* шрифт */
@@ -35,7 +35,7 @@ h1 {
     color: rgb(195, 255, 0);
     /* Цвет заднего фона */
     /* background-color: gainsboro; */
-    background: linear-gradient(90deg, rgb(1, 255, 0), rgb(86, 181, 184) 80%);
+    /* background: linear-gradient(90deg, rgb(1, 255, 0), rgb(86, 181, 184) 80%); */
 
     /* Расстояние между буквами */
     letter-spacing: 10px;
@@ -86,12 +86,6 @@ a {
     border-radius: 10px;
 }
 
-.art {
-    box-shadow: 12px 10px 5px -5px rgba(0, 0, 0, 0.72);
-}
-p {
-    box-shadow: 12px 10px 5px -5px rgba(0, 0, 0, 0.72);
-}
 
 .lor2 {
     font-family: "Mogra", system-ui;
@@ -123,9 +117,102 @@ p {
 
 
 
-/* ==============list-page============== */
-.body-list-page h1 {
-    color: aquamarine;
+
+.hero {
+    width: 100%;
+    height: 80vh;
+    background-color: tomato;
+
+    position: relative;
+    z-index: 0;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+
+    /* Изменяет яркость картинки */
+    filter: brightness(50%);
+}
+
+.hero__description {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.hero__description h1 {
+    font-size: 7rem;
+}
+
+.hero__description p {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section {
+    width: 100%;
+    height: 80vh;
+
+    position: relative;
+    z-index: 0;
+}
+
+.section img {
+    width: 100%;
+    height: 100%;
+}
+
+.section__description {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.section__description h3 {
+    font-size: 3rem;
+}
+
+.section__description p {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
 }
 
 
@@ -167,29 +254,8 @@ p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ==============list-page============== */
+.body-list-page h1 {
+    color: aquamarine;
+}
 
