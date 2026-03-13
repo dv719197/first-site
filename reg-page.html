@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #333;
+            color: white;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Форма для ввода данных пользователя -->
+    <!-- autocomplete="off" не будет выдавать подсказки для заполнения, так как это тестовые проекты -->
+    <form autocomplete="off">
+        <!-- type="text" - поле ввода текста -->
+        <input type="text" placeholder="Имя" maxlength="10" required><br>
+        <!-- placeholder="Фамилия" - подсказка для заполнения поля -->
+        <!-- maxlength="10" - максимальное количество символов -->
+        <!-- required - поле обязательно для заполнения -->
+
+
+
+        <input type="email" placeholder="Почта" required><br>
+        <!--  type="email" - даёт возможность ввода только корректного email -->
+
+
+        <input type="password" placeholder="Пароль" minlength="6" required><br>
+        <!--  type="password" - скрывает введенный текст -->
+        <!--  minlength="6" - минимальное количество символов -->
+        <button class="btn"> Войти </button>
+    </form>
+
+
+    <!-- Стили CSS -->
+     <style>
+        form {
+            width: 500px;
+            margin: 0 auto;
+            margin-top: 300px;
+            padding: 50px;
+            background-color: tomato;
+        }
+
+        form input {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 20px;
+            background-color: white;
+            color: black;
+        }
+
+        input::placeholder {
+            color: black;
+        }
+
+        form .btn {
+            width: 100%;
+            padding: 20px;
+            margin-top: 50px;
+            text-align: center;
+        }
+     </style>
+</body>
+
+</html>
