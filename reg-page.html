@@ -21,36 +21,59 @@
 </head>
 
 <body>
-    <!-- Форма для ввода данных пользователя -->
-    <!-- autocomplete="off" не будет выдавать подсказки для заполнения, так как это тестовые проекты -->
-    <form autocomplete="off">
-        <!-- type="text" - поле ввода текста -->
-        <input type="text" placeholder="Имя" maxlength="10" required><br>
-        <!-- placeholder="Фамилия" - подсказка для заполнения поля -->
-        <!-- maxlength="10" - максимальное количество символов -->
-        <!-- required - поле обязательно для заполнения -->
+
+    <div class="reg-container">
+        <div class="reg-container__left"></div>
+        <!--Два нижних подчёркивания нужны для того чтобы показать что блок находится внутри другого блока и это важно увидеть -->
+        <div class="reg-container__right">
+            <!-- Форма для ввода данных пользователя -->
+            <!-- autocomplete="off" не будет выдавать подсказки для заполнения, так как это тестовые проекты -->
+            <form autocomplete="off">
+                <!-- type="text" - поле ввода текста -->
+                <input type="text" placeholder="Имя" maxlength="10" required><br>
+                <!-- placeholder="Фамилия" - подсказка для заполнения поля -->
+                <!-- maxlength="10" - максимальное количество символов -->
+                <!-- required - поле обязательно для заполнения -->
 
 
 
-        <input type="email" placeholder="Почта" required><br>
-        <!--  type="email" - даёт возможность ввода только корректного email -->
+                <input type="email" placeholder="Почта" required><br>
+                <!--  type="email" - даёт возможность ввода только корректного email -->
 
 
-        <input type="password" placeholder="Пароль" minlength="6" required><br>
-        <!--  type="password" - скрывает введенный текст -->
-        <!--  minlength="6" - минимальное количество символов -->
-        <button class="btn"> Войти </button>
-    </form>
-
+                <input type="password" placeholder="Пароль" minlength="6" required><br>
+                <!--  type="password" - скрывает введенный текст -->
+                <!--  minlength="6" - минимальное количество символов -->
+                <button class="btn"> Войти </button>
+            </form>
+        </div>
+    </div>
 
     <!-- Стили CSS -->
-     <style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            background-image: url(/images/reg-page.jpg);
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
         form {
             width: 500px;
             margin: 0 auto;
             margin-top: 300px;
             padding: 50px;
-            background-color: tomato;
+            border-radius: 15px;
+            /* border: 2px solid rgba() делает обводку полупразрачной */
+            /* backdrop-filter: blur() saturate()  размытие и насыщенность за блоком */
         }
 
         form input {
@@ -58,11 +81,50 @@
             margin-bottom: 10px;
             padding: 20px;
             background-color: white;
-            color: black;
+            color: rgb(255, 255, 255);
+            border: none;
+            /* убирает обводку */
+            border: 1px solid rgb(255, 255, 255, 0.043);
+            /* для легкой рамки, делает больше выпуклость */
+            border-radius: 15px;
+            background-color: #ffffff05;
+            /* максимально белый */
+            backdrop-filter: blur(10px) saturate(120%);
+            box-shadow:
+                inset 0 1px 1px rgb(255, 255, 255, 0.6),
+                /* тень внутри элемента сверху светлая */
+                0 10px 30px rgba(0, 0, 0, 0.15);
+            /* inset 0 1px 1px rgb(255, 255, 255, 0.6) - внутреняя тень для создания эффекта выпуклости */
+            transition: 0.3s
+        }
+
+        form input:hover,
+        form .btn:hover {
+            background-color: #ffffff15;
+            /* при наведении на поле, цвет фона становится более насыщенным */
+            box-shadow:
+                inset 0 2px 3px rgb(255, 255, 255, 0.8),
+                0 15px 40px rgba(0, 0, 0, 0.2);
+            /* при наведении на поле, тень становится более яркой и глубокой */
+            backdrop-filter: blur(15px) saturate(150%);
+            /* при наведении на поле, эффект стекла становится более заметным */
+            transform: translateY(-2px);
+            /* при наведении на поле, элемент поднимается на 2 пикселя для создания эффекта "поднятия" */
+            transition: 0.3s;
+            /* плавный переход цвета фона при наведении */
         }
 
         input::placeholder {
-            color: black;
+            color: white;
+            transition: 0.3s;
+        }
+
+        input:hover::placeholder {
+            /* hover меняет цвет подсказки при наведении мышкой */
+            color: rgb(255, 255, 255, 0.2);
+            /* при наведении на поле, цвет подсказки становится более прозрачным */
+            transition: 0.3s;
+            /* плавный переход цвета подсказки при наведении */
         }
 
         form .btn {
@@ -70,8 +132,21 @@
             padding: 20px;
             margin-top: 50px;
             text-align: center;
+            border: none;
+            /* убирает обводку */
+            border: 1px solid rgb(255, 255, 255, 0.043);
+            /* для легкой рамки, делает больше выпуклость */
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0);
+            color: white;
+            box-shadow:
+                inset 0 0 0 0 rgb(255, 255, 255, 0.6),
+                0 10px 30px rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(10px) saturate(120%);
+            /* для создания эффекта стекла */
+            transition: 0.3s;
         }
-     </style>
+    </style>
 </body>
 
 </html>

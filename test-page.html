@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма связи</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #e0e0e0; /* Серый верх по умолчанию */
+        }
+
+        /* Розовая нижняя часть */
+        .bottom-bg {
+            background-color: #d9a0ba;
+            height: 500px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            z-index: -1; /* Чтобы фон был под текстом */
+        }
+
+        .wrapper {
+            width: 900px;
+            margin: 0 auto;
+            padding-top: 100px;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form autocomplete="off">
+            <input type="text" placeholder="Введите сюда ваше имя" required>
+            <input type="email" placeholder="Введи адрес электронной почты" required>
+            <textarea placeholder="Введите ваше сообщение"></textarea>
+            <button class="btn">отправить</button>
+        </form>
+
+
+        <div class="content">
+            <h1>СВЯЗАТЬСЯ</h1>
+            <p class="subtitle">Привет! Мы с нетерпением ждем возможности начать совместный проект с вами!</p>
+            <p class="description">
+                Etiam sit amet convallis erat — class aptent taciti <br>
+                sociosqu ad litora torquent per conubia Maecenas.
+            </p>
+        </div>
+    </div>
+
+    <!-- Розовый фон для нижней части -->
+    <div class="bottom-bg"></div>
+
+    <style>
+        /* Стили формы */
+        form {
+            width: 500px;
+            margin-bottom: 50px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+            font-size: 14px;
+        }
+
+        form textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        form .btn {
+            background-color: #e6a8c4;
+            color: white;
+            border: none;
+            padding: 12px 40px;
+            border-radius: 25px;
+            cursor: pointer;
+            text-transform: lowercase;
+        }
+
+        .content {
+            color: white;
+        }
+
+        h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            max-width: 400px;
+        }
+
+        .description {
+            font-size: 14px;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+    </style>
+</body>
+
+</html>
