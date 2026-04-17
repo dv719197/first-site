@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(29, 29, 29);
+            color: white;
+        }
+
+        /* container – склад для коробок */
+        .container {
+            width: 600px;
+            height: 600px;
+            display: flex; /* говорим что на складе всё будет двигаться */
+            justify-content: space-between; /* выравниваем коробки по горизонтали по центру */
+            align-items: start; /* выравнивание коробки по вертикали по центру */
+            background-color: gray;
+        }
+
+
+        /* Коробка */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: peru;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">Коробка 1</div>
+        <div class="box">Коробка 2</div>
+        <div class="box">Коробка 3</div>
+    </div>
+
+</body>
+
+</html>
